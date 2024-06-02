@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+
+  margin: 10px auto;
+}
+
+header .left-side a img{
+  width: 60px;
+}
+
+header .right-side{
+  display: flex;
+}
+
+header .right-side .nav-link-wrapper a{
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "poppins";
+}
+
+.container{
+  max-width: 90%;
+  margin: 60px auto;
+}
+
+.container .left-side{
+  text-align: center;
+  
+}
+
+.container .left-side h1{
+  font-size: 100px;
+  letter-spacing: 2px;
+  color: #000;
+}
+.nav-link-wrapper a{
+  position: relative;
+}
+
+.nav-link-wrapper a::before{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  bottom: 0%;
+  border-radius: 10px;
+  background-color: rgb(37, 113, 7);
+  transition: all 0.3s ease-in;
+}
+
+.nav-link-wrapper:hover a::before{
+width: 80%;
+}
+
+
+.container .left-side h1 .green{
+  color: green;
+  font-family: 'Viga', serif;
+}
+
+.container .left-side p{
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  color: #000000a6;
+}
+
+.container .left-side a{
+  display: inline-block;
+  background: green;
+  padding: 12px 18px 12px 10px;
+  text-decoration: none;
+  border-radius: 25px;
+  color: white;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.container .right-side{
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 15%;
+}
+
+.container .right-side img{
+  max-width: 70%;
+}
+
+.container .right-side .box{
+  position: absolute;
+  display: grid;
+  right: 0%;
+  bottom: 0%;
+}
+
+.container .right-side .box img{
+  width: 25px;
+  margin: 10px;
+}
+
+.container .right-side .box img.facebook{
+  width: 18.5px;
+}
+
+.thumb{
+  display: flex;
+  margin-top: -60px;
+  justify-content: center;
+}
+
+.thumb a:hover{
+  margin-top: -15px;
+  transition: 0.2s;
+}
+
+.thumb img{
+  width: 54px;
+  margin: 20px;
+}
+
+@media (min-width: 1140px){
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  header .left-side a img{
+    width: 80px;
+  }
+
+  header .right-side{
+    display: flex;
+  }
+
+  header .right-side .nav-link-wrapper a{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .container{
+    max-width: 100%;
+    margin: 50px auto;
+    display: flex;
+  }
+
+  .container .left-side{
+    text-align: start;
+    flex: 1;
+  }
+
+  .container .left-side h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+  }
+
+  .container .left-side h1 .green{
+    color: green;
+    font-family: 'Viga', serif;
+  }
+
+  .container .left-side p{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .container .left-side a{
+    display: inline-block;
+    background: green;
+    padding: 12px 18px 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .container .right-side{
+    flex: 1;
+    text-align: center;
+  }
+
+  .container .right-side img{
+    width: 330px;
+    margin-left: 150px;
+    margin-top: -30px;
+  }
+
+  .container .right-side .box{
+    display: grid;
+    position: absolute;
+    bottom: 40%;
+    right: 1%;
+  }
+
+  .container .right-side .box img{
+    width: 25px;
+    margin: 10px;
+  }
+
+  .container .right-side .box img.facebook{
+    width: 18.5px;
+  }
+
+  .thumb{
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+  }
+
+  .thumb a:hover{
+    margin-top: -15px;
+    transition: 0.2s;
+  }
+
+  .thumb img{
+    width: 54px;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  header{
+    display: block;
+  }
+
+  header .left-side a img{
+    width: 80px;
+    margin: auto;
+    display: block;
+  }
+
+  header .right-side{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  header .right-side .nav-link-wrapper a{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .container{
+    max-width: 80%;
+    margin: 50px auto;
+  }
+
+  .container .left-side{
+    text-align: center;
+  }
+
+  .container .left-side h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+
+  .container .left-side h1 .green{
+    color: green;
+    font-family: 'Viga', serif;
+  }
+
+  .container .left-side p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  .container .left-side a{
+    display: inline-block;
+    background: green;
+    padding: 12px 18px 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+    margin-top: 15px;
+    font-size: 16.2px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 404px){
+  header{
+    display: block;
+  }
+
+  header .left-side a img{
+    width: 80px;
+    margin: auto;
+    display: block;
+  }
+
+  header .right-side{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  header .right-side .nav-link-wrapper a{
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  .container .right-side img{
+    width: 330px;
+    margin-top: -30px;
+  }
+  .container .right-side img{
+    max-width: 50%;
+  }
+
+  .container .right-side .box{
+    display: none;
+    position: absolute;
+    bottom: 250px;
+    right: 25px;
+  }
+
+  .container .right-side .box img{
+    width: 25px;
+    margin: 10px;
+  }
+
+  .container .right-side .box img.facebook{
+    width: 18.5px;
+  }
+
+  .thumb{
+    display: flex;
+    margin-top: -30px;
+    justify-content: center;
+  }
+
+  .thumb a:hover{
+    margin-top: -15px;
+    transition: 0.2s;
+  }
+
+  .thumb img{
+    width: 45px;
+    margin: 20px;
+  }
+}
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* added this to avoid overflow issues */
+}
+nav{
+    font-family: 'ubuntu',sans-serif;
+
+}
+nav ul{
+    display: flex;
+    font-family: 'ubuntu',sans-serif;
+    background-color: black;
+    list-style-type: none;
+    color: white;
+    height: 64px;
+    align-items: center;
+}
+nav ul li {
+    padding: 0 30px 6px 1px;
+}
+.brand img{
+    width: 44px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+min-height: 70vh;
+/* background-color: black; */
+color: white;
+font-family: 'Varela Round',sans-serif;
+display: flex;
+width: 70%;
+margin: 23px auto;
+border-radius: 12px;
+padding: 35px;
+background-image: url("bg.jpg");
+}
+
+.buttom{
+ position: sticky;
+ background-color: rgb(0, 0, 0);
+ color: white;
+ height: 176px;
+ bottom: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
